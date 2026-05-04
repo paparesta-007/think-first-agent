@@ -16,7 +16,7 @@ A structured pre-implementation protocol for Claude Code, Codex, Gemini CLI, Cur
 
 ## The problem in one paragraph
 
-You ask your AI agent to "add a payment webhook". It confidently generates 200 lines: a new `PaymentController`, a call to `this.paymentService.processWebhook()`, an update to a `payments` table, and a test file. It looks perfect. Then you run it. Half the functions don't exist. The table is named `transactions` not `payments`. The service uses a completely different method signature. You spend 40 minutes undoing what 10 seconds created.
+You ask your AI agent to "add a payment webhook". It somehow generates 200 lines: a new `PaymentController`, a call to `this.paymentService.processWebhook()`, an update to a `payments` table, and a test file. It looks perfect, as you wanted it. Then you run it. Half the functions don't exist or are misnamed. The table is named `transactions` not `payments`. The service uses a completely different method signature. You spend 40 minutes undoing what 10 seconds created.
 
 **The agent didn't read your code. It guessed.**
 
@@ -206,13 +206,6 @@ The three-phase design — reconnaissance, analysis, self-verification — is gr
 
 ---
 
-## Contributing
-
-Found a section that doesn't trigger correctly? Have a use case the skill misses? PRs and issues are welcome.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add examples, improve trigger logic, or adapt the skill for a specific stack (Rails, Django, Go, etc.).
-
----
 
 ## License
 
@@ -221,8 +214,6 @@ MIT — use it, fork it, adapt it, include it in your own skill packs.
 ---
 
 <div align="center">
-
-**If this saved you from a bad migration, a missing auth guard, or a 3am rollback — ⭐ star it.**  
-It helps others find it before they make the same mistake.
+**Made by Papa with ❤️ for safer AI-assisted coding.**
 
 </div>
